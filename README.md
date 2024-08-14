@@ -1,6 +1,9 @@
 # UPDATE Multiwii-2.3-with-BMP280 (August 14th, 2024)
 Multiwii brushed quadcopter with bmp280 module
 
+<h1>ATTENTION: THIS PROJECT IS ONLY WORKS with LADYBIRD Board</h1>
+<p>See in config.h to choose board LADYBIRD. All files are configured. You dont need to change anything., but about how to <a href="#activate">activate and deactivate baro</a>.</p>
+
 <p>All wiring and schematic is based on: <a href="https://github.com/ArduJimmy/ArduJimmy-Brushed-QuadX-With-Flysky">Multiwii 2.3 Brushed QuadX</a></p>
 
 <img src="https://github.com/ArduJimmy/Multiwii-2.3-with-BMP280/blob/main/BMP280.png" alt="Multiwii with bmp280"/>
@@ -22,7 +25,7 @@ Multiwii brushed quadcopter with bmp280 module
 <p>This package (multiwii 2.3 with BMP280) has been already tested. Baro feature has worked successfully in multiwii 2.3</p>
 <p>I will post the video for test flight using baro later here.</p>
 
-<h3>HOW TO</h3>
+<h3 id="activate">HOW TO</h3>
 <p><b>How to activate barometer in your drone</b>: Change the value 0 to 1 in <b>def.h</b> file. Otherwise, it will show error in multiwiiConf-GUI.</p>
 <ul>
   <li>ACTIVATE: #define BMP280_CONNECTED 1</li>
