@@ -1,7 +1,7 @@
 #ifndef DEF_H_
 #define DEF_H_
 
-#define BMP280_CONNECTED 0
+#define BMP280_CONNECTED 1
 
 /**************************************************************************************/
 /***************             test configurations                   ********************/
@@ -1392,6 +1392,7 @@
 
 #if defined(LADYBIRD)
   #define MPU6050
+  #define BMP280  
   #define ACC_ORIENTATION(X, Y, Z)  {imu.accADC[ROLL]  = -X; imu.accADC[PITCH]  = -Y; imu.accADC[YAW]  =  Z;}
   #define GYRO_ORIENTATION(X, Y, Z) {imu.gyroADC[ROLL] =  Y; imu.gyroADC[PITCH] = -X; imu.gyroADC[YAW] = -Z;}
   #undef INTERNAL_I2C_PULLUPS
@@ -1404,7 +1405,8 @@
   #define VBATLEVEL_WARN2 10
   #define VBATLEVEL_CRIT  10
   #define NO_VBAT         10
-  #define MOTOR_STOP 
+  #define MOTOR_STOP
+
 #endif
 
 #if defined(MEGAWAP_V2_STD) 
