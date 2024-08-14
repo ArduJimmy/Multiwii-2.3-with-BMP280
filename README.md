@@ -5,6 +5,18 @@ Multiwii brushed quadcopter with bmp280 module
 
 <img src="https://github.com/ArduJimmy/Multiwii-2.3-with-BMP280/blob/main/BMP280.png" alt="Multiwii with bmp280"/>
 
+<h3>BMP280 WIRING with MPU6050</h3>
+<ul>
+  <li>Use 3.3v Breakout Module or AMS1117 3.3v for MPU6050 and BMP280</li>\
+  <li>VCC Output off 3.3v breakout to VCC MPU6050 and BMP280</li>
+  <li>GND 3.3v breakout to GND MPU6050 and GND BMP280</li>
+  <li>GND 3.3v breakout ALSO connect to GND Arduno board</li>
+  <li>SCL mpu6050 and SCL bmp280 connected to A5 arduino board</li>
+  <li>SDA mpu6050 and SDA bmp280 connected to A4 arduino board</li>  
+</ul>
+
+<p>Here's the wiring:</p>
+<img src="https://github.com/ArduJimmy/Multiwii-2.3-with-BMP280/blob/main/schematic%20diagram%20bmp280.png"/>
 
 <h3><b>UPDATE!</b> TESTED!</h3>
 <p>This package (multiwii 2.3 with BMP280) has been already tested. Baro feature has worked successfully in multiwii 2.3</p>
